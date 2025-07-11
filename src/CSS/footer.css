@@ -1,0 +1,131 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 30px 60px;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-logo p {
+  color: #383838;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 22px;
+}
+
+.col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.quick-links {
+  flex: 1;
+  padding-left: 100px;
+}
+
+.quick-links ul {
+  list-style: none;
+}
+
+.quick-links li {
+  font-size: 15px;
+  margin-bottom: 7px;
+  color: #555;
+  cursor: pointer;
+  padding-left: 25px;
+}
+
+.quick-links li:hover {
+  color: #373737;
+}
+
+.c-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #555;
+}
+
+.c-item svg {
+  margin-top: 3px;
+  color: #111;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+
+.social-icons .icon {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.facebook {
+  color: #1558b0;
+}
+.instagram {
+  color: #c13584;
+}
+.twitter {
+  color: #000;
+}
+.linkedin {
+  color: #004182;
+}
+
+.social-icons .icon:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.bottom-bar {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.bottom-bar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  hr {
+    width: 100%;
+  }
+}

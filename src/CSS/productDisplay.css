@@ -1,0 +1,87 @@
+.bredcrum-design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.productdisplay {
+    display: flex;
+    margin: 0px 50px;
+}
+
+.productdisplay-left {
+    display: flex;
+    gap: 20px;
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    img{
+        height: 160px;
+    }
+}
+
+.productdisplay-img-main img{
+    height: 500px;
+}
+
+.productdisplay-right {
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productdisplay-right h1 {
+    color: #3d3d3d;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+    color: #1c1c1c;
+    font-size: 16px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    margin: 25px 0px;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.productdisplay-right-price-old {
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+    color: #3d3d3d;
+}
+
+.productdisplay-right button {
+    padding: 20px 40px;
+    width: 325px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 40px;
+    color: white;
+    background-color: #ff8741;
+    margin-top: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

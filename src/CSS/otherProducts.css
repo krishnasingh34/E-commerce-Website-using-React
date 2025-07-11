@@ -1,0 +1,25 @@
+.otherproducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.otherproducts h1{
+    color: #171717;
+    font-size: 40px;
+    font-weight: 600;
+}
+.otherproducts hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.otherproducts-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px 170px;
+    gap: 80px;
+    padding-bottom: 100px;
+}
