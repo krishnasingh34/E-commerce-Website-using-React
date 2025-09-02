@@ -38,7 +38,7 @@ const Cart = () => {
                           ...prev, [e.id]: prev[e.id] - 1
                         }))
                         if (token) {
-                          axios.post('http://localhost:4000/removeFromCart', {
+                          axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/removeFromCart`, {
                             itemId: e.id
                           },
                             {
@@ -53,7 +53,7 @@ const Cart = () => {
                           ...prev, [e.id]: 0
                         }))
                         if (token) {
-                          axios.post('http://localhost:4000/clearFromCart', {
+                          axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/clearFromCart`, {
                             itemId: e.id
                           },
                             {
@@ -71,7 +71,7 @@ const Cart = () => {
                         ...prev, [e.id]: prev[e.id] + 1
                       }))
                       if (token) {
-                          axios.post('http://localhost:4000/addToCart', {
+                          axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/addToCart`, {
                             itemId: e.id
                           }, 
                           {

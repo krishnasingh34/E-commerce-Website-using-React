@@ -39,7 +39,7 @@ const ShopContextProvider = (props) => {
 
     useEffect(() => {
         if (token) {
-            axios.post('http://localhost:4000/getCartdata', {}, {
+            axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/getCartdata`, {}, {
                 headers: {
                     'auth-token': token
                 }
@@ -73,7 +73,7 @@ const ShopContextProvider = (props) => {
             ...prev, [itemId]: prev[itemId] + 1
         }))
         if (token) {
-            axios.post('http://localhost:4000/addToCart', {
+            axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/addToCart`, {
                 itemId
             },
                 {
@@ -91,7 +91,7 @@ const ShopContextProvider = (props) => {
         }))
         setTotalCartItems(prev => prev - 1)
         if (token) {
-            axios.post('http://localhost:4000/clearFromCart', {
+            axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/clearFromCart`, {
                 itemId
             },
                 {

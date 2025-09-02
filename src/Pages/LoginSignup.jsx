@@ -74,7 +74,7 @@ const LoginSignup = () => {
       alert("Password and confirm password must match")
       return
     }
-    axios.post('http://localhost:4000/signup', {
+    axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/signup`, {
       username, email, password
     })
       .then(info => {
@@ -108,7 +108,7 @@ const LoginSignup = () => {
       alert('All fields are required')
       return
     }
-    axios.post('http://localhost:4000/login', {
+    axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/login`, {
       email, password
     })
       .then(info => {
